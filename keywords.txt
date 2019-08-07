@@ -1,0 +1,67 @@
+#######################################
+# Syntax Coloring Map For PaunaStepper
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+Stepper			KEYWORD1
+PAUNA_STATES	KEYWORD1
+PAUNA_TYPE		KEYWORD1
+PAUNA_FREQ		KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+attach		KEYWORD2
+deattach	KEYWORD2
+move		KEYWORD2
+moveFor		KEYWORD2
+rotate		KEYWORD2
+rotateTo		KEYWORD2
+rotateStep		KEYWORD2
+rotateStepTo	KEYWORD2
+waitMoveFor		KEYWORD2
+waitRotate		KEYWORD2
+waitRotateTo		KEYWORD2
+waitRotateFor		KEYWORD2
+waitRotateStep		KEYWORD2
+waitRotateStepFor	KEYWORD2
+waitRotateStepTo	KEYWORD2
+setStepDelayX		KEYWORD2
+setRPM		KEYWORD2
+setOdo		KEYWORD2
+resetOdo	KEYWORD2
+getOdo		KEYWORD2
+getLimitStep	KEYWORD2
+getCountStep	KEYWORD2
+getStepDelayX	KEYWORD2
+getMotorId		KEYWORD2
+getNumMotors	KEYWORD2
+getStateStr		KEYWORD2		
+isMoving		KEYWORD2
+getState		KEYWORD2
+getType			KEYWORD2
+getInterruptFreq	KEYWORD2
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+P_FORWARD	LITERAL1
+P_BACKWARD	LITERAL1
+P_REVERSE	LITERAL1
+P_BRAKE 	LITERAL1
+P_DEATTACHED	LITERAL1
+P_STOP		LITERAL1
+P_STOPPED	LITERAL1
+P_BRAKED	LITERAL1
+P_FREQ10000	LITERAL1
+P_FREQ1000	LITERAL1
+P_FREQ500	LITERAL1
+P_FREQ100	LITERAL1
+P_FULLSTEP	LITERAL1
+P_HALFSTEP	LITERAL1

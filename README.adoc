@@ -1,0 +1,22 @@
+PaunaStepper Library for Arduino
+================================
+
+PaunaStepper is a library for use with 4-wire hobby stepper motors. It is mainly oriented
+to low-cost stepper such as model 28BYJ-48 5v with ULN2003. The main feature that differentiates 
+this library from similar ones is that it uses interrupts to control the steppers and can control
+more than one stepper in a similar way to the Servo library. This allows, for example, to control 
+the speed and direction of the steppers at the same time as the delay () functions and serial 
+communication without the need to constantly call an update function or use the blocking mode.
+
+PaunaStepper uses the arduino UNO TIMER2, so it is not possible to use tone () at the same time. 
+However, other non-blocking libraries can be used without interruption to generate tones.
+
+*PAUNA means child in Kunza (aka Atacameño), one of the languages spoken by some of the native 
+peoples of northern Chile (South America).
+
+Documentation
+-------------
+For more information about this library please visit us at
+http://www.udec.cl/%7edariorojas/PaunaStepper
+
+

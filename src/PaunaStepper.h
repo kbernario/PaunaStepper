@@ -72,10 +72,6 @@ enum PAUNA_FREQ   {P_FREQ10000, P_FREQ1000, P_FREQ500, P_FREQ100};
 enum PAUNA_TYPE   {P_FULLSTEP, P_HALFSTEP};
 
 
-#ifndef PUNA_LIMIT_END
-#define PUNA_LIMIT_END P_STOP
-#endif
-
 class PaunaStepper {
   public:  
     PaunaStepper();  

@@ -26,6 +26,7 @@
  
 #include <avr/interrupt.h>
 #include "PaunaStepper.h"
+
 static inline void pauna_stepInterrupt() {
   cli();
   for (int i=0; i<_PAUNA_MAX_STEPPER; i++) {
@@ -65,7 +66,7 @@ static inline void pauna_stepInterrupt() {
               }
               if (_pauna_limstep[i]>0) _pauna_countstep[i]++;
             } else {               
-               _pauna_state[i] = PUNA_LIMIT_END;
+               _pauna_state[i] = P_BRAKED;
             }
          }
       } else {
@@ -378,9 +379,6 @@ bool PaunaStepper::moveFor(PAUNA_STATES mov, long time){
               break;
           }           
           long limit = ((double)time/1000)/((double)_pauna_delay[_pauna_motorid]/(double)freq);
-          if (mov == P_BACKWARD){
-            limit = limit*-1;
-          }
           rotateStep(limit);
           return true;
      }
